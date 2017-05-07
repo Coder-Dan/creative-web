@@ -1,0 +1,100 @@
+body {
+    height: 100%;
+    margin: 0;
+}
+/* -- SECTION CLASSES -- */
+#header-main{
+    background: lightblue;
+}
+#first-section {
+    background: cadetblue;
+}
+#main-section {
+    background: cornflowerblue;
+}
+footer {
+    background: lightslategrey;
+    /*position: relative;
+    display: inline-block;*/
+    /*height: 100%;*/
+}
+
+/*HEADER TITLES*/
+
+.about-page-title {
+    position: absolute;
+    /*Solution aligning absolute objects, to the center perfectly using CSS transform*/
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: grey;
+    /*font-size: 64pt;*/
+    font-family: "Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%; /* Extend size to that of the container i.e div or section */
+}
+
+.image-banner-wrapper {
+    position: relative;
+    text-align: center;
+    background-position: center;
+}
+
+.image-banner-wrapper .banner-image {
+    width: 100%;
+}
+
+/* Applying gradients over images:
+ *-- Source: https://codepen.io/alexcarpenter/pen/LveDx?editors=1100 --
+ *-- Another reference: http://vincoding.com/css-transparent-gradient-overlay-image/ --
+ * Seems to only work with the division tag not the image tag. Why? */
+/* Note: both : and :: work, the difference is that : syntax is CSS 2 and the other is CSS3 */
+.image-banner-wrapper::before {
+/*.banner-image::before {*/
+    content: 'Take2';
+    position: absolute; /* Required as absolute, possibly due to the fact it passes division size for the gradient*/
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+    /*background-image: -webkit-linear-gradient(top, rgba(248,78,48,0.35) 0%, rgba(241,111,91,0.64) 23%, rgba(246,41,14,1) 51%, rgba(240,50,25,1) 70%, rgba(163,28,15,1) 94%);  Chrome10+,Safari5.1+ */
+	opacity: .4; 
+  }
+
+.sidebar-right-wrapper {
+    position: relative;
+
+}
+/*-- Need to Learn how to use this, you can use px*/
+@media screen and (min-width: 120em) {
+  .page-title-span {
+      top: 100%
+  }
+}
+
+/* -- GRADIENT CLASSES -- */
+.red-orange-trans-gradient{
+    background: rgba(248,78,48,0.35);/* Old Browsers */
+    background: -moz-linear-gradient(top, rgba(248,78,48,0.35) 0%, rgba(241,111,91,0.64) 23%, rgba(246,41,14,1) 51%, rgba(240,50,25,1) 70%, rgba(163,28,15,1) 94%); /* FF3.6+ */
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,78,48,0.35)), color-stop(23%, rgba(241,111,91,0.64)), color-stop(51%, rgba(246,41,14,1)), color-stop(70%, rgba(240,50,25,1)), color-stop(94%, rgba(163,28,15,1)));/* Chrome, Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(248,78,48,0.35) 0%, rgba(241,111,91,0.64) 23%, rgba(246,41,14,1) 51%, rgba(240,50,25,1) 70%, rgba(163,28,15,1) 94%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(248,78,48,0.35) 0%, rgba(241,111,91,0.64) 23%, rgba(246,41,14,1) 51%, rgba(240,50,25,1) 70%, rgba(163,28,15,1) 94%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(248,78,48,0.35) 0%, rgba(241,111,91,0.64) 23%, rgba(246,41,14,1) 51%, rgba(240,50,25,1) 70%, rgba(163,28,15,1) 94%); /* IE 10+ */
+    background: linear-gradient(to bottom, rgba(248,78,48,0.35) 0%, rgba(241,111,91,0.64) 23%, rgba(246,41,14,1) 51%, rgba(240,50,25,1) 70%, rgba(163,28,15,1) 94%);/* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f84e30', endColorstr='#a31c0f', GradientType=0 );/* IE6-9 */
+}
+
+/*source: http://stackoverflow.com/questions/2869212/css3-gradient-background-set-on-body-doesnt-stretch-but-instead-repeats*/
+.fixed-gradient{
+    /*height: 100%;*/
+    /*margin: 0*/
+    background-attachment: fixed;
+}
+
+.no-repeat-gradient{
+    background-repeat: no-repeat;
+}
+

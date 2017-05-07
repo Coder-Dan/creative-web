@@ -1,0 +1,14 @@
+# Default 
+.DS_Store
+config.codekit
+
+# Ignoring the favicon.ico right now - haven't picked one yet.
+favicon.ico
+
+# Ignoring the sample website I have loaded on computer
+# ./assets
+assets
+profile.html
+
+# Ignoring the sample text, Lorpus ipsum.txt
+Lorpus ipsum.txt
