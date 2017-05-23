@@ -11,7 +11,7 @@
         <title>Daniel Minero | Profile Home</title>
         <!--stylesheet links-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css"/>
-        <link rel="stylesheet" href="./css/style.css"/>
+        <link rel="stylesheet" href="./css/style.1.css"/>
         <link rel="stylesheet" href="./css/font-awesome.min.css"/>
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -23,19 +23,22 @@
 
     </head>
     <body>
+        <!--Main Container-->
         <header id="header-main">
-            <div class="container">
-                <div id="brand">
+            
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">                
+                <div id="brand" class="navbar-header nav-left-side">
                     <!--<img src="URL" alt="Daniel Minero"/>-->
-                    <a style="color: black" href="./index.html">
-                        <h1>Daniel A. Minero</h1>
-                        <p style="font-style: italic"> Graduate Computer Scientist / Jack-of-all-Trades / Hobbist Painter</p>
+                    <a style="color: black;" href="./index.html">
+                        <h1 style="display: inline-block; margin: auto">Daniel A. Minero</h1>
+                        <p style="font-style: italic; margin: auto"> Graduate Computer Scientist / Jack-of-all-Trades / Hobbist Painter</p>
                     </a>
                 </div>
-                <nav>
-                    <!--TODO: Spacing between points ?MORE_INFO-->
-                    <!--TODO: Middle align icons with text in the vertical !DONE-->
-                    <ul><i>
+                <!--TODO: Spacing between points ?MORE_INFO-->
+                <!--TODO: Middle align icons with text in the vertical !DONE-->
+                <div class="nav-right-side">
+                    <ul id="main-nav" class="nav navbar-nav">
                         <li>
                             <a style="color: black;" href="./projects.html">
                                 <i style="vertical-align: middle;" class="fa fa-puzzle-piece fa-fw fa-2x" aria-hidden="true"></i>&nbsp;Projects
@@ -56,20 +59,22 @@
                                 <i style="vertical-align: middle;" class="fa fa-smile-o fa-fw fa-2x" aria-hidden="true"></i>&nbsp;About Me
                             </a>
                         </li>
-                    </i></ul>
-                </nav> 
-            </div>
+                        <li>Empty</li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
         </header>
 
         <!--Section code-->
         <section id="first-section">
-            <div class="container">
+            <div class="container-fluid">
                 FIRST SECTION
             </div>
         </section>
         <!--Section code-->
         <section id="main-section">
-            <div class="container">
+            <div class="container-fluid">
                 MAIN SECTION
             </div>
         </section>
@@ -78,17 +83,17 @@
 
         </style>
         <footer class="col-md-12">
-            <div style="overflow: hidden" class="footer-container">
+            <div style="overflow: hidden" class="footer-container container-fluid">
                 <!--artifect generated when using col-md-3-->
                 <!--col-xs-6 doesm't look good for desktop, plus maintains the two columns, solution - set container to use overflow -->
-                <div class="foot-panel-1 col-xs-6">
+                <div class="foot-panel-1 col-sm-6">
                     <h2>Daniel Minero</h2>
                     <span class="sub-header">personal profile</span>
                     <p>Webcode provided on <a href="http://github.com/Coder-Dan/creative-website">GitHub</a></p>
                     <!--http://stackoverflow.com/questions/41283662/margin-doesnt-get-filled-with-background-color-why, And I've notice it's using the margin through the browser and the reading the bootstrap css -->
                     <p style="margin: 0px; padding-bottom: 10px">Powered by Caffine and Biscuits!</p>
                 </div>
-                <div class="foot-panel-2 col-xs-6">
+                <div class="foot-panel-2 col-sm-6">
                     <div class="footer-navigation">
                         <ul class="list-inline">
                             <li><a href="./projects.html">Projects</a></li>
