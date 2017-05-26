@@ -208,17 +208,17 @@ footer {
 
 /* COLOUR PALLETES */
 /* Use to use with elements background */
-b-g-grad-b-purple-1 {
+.b-g-grad-b-purple-1 {
     background: linear-gradient(to bottom, rgb(59, 115, 173) 0%, rgb(95, 160, 151) 100%);
     border-color: #783caf;
 }
 
-b-dark-black-blue-colour-layout-1{
+.b-dark-black-blue-colour-layout-1{
     background: #252830;
     border-color: #252830;
     color: #e5e5e5;
 }
 
-dark-black-gradient {
+.dark-black-gradient {
     background-image: linear-gradient(to bottom,#3c3c3c 0,#222 100%);
 }
