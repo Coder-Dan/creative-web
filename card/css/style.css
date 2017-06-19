@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Open+Sans:400,700');
+
+body {
+    overflow: visible;
+}
+body > p {
+    /*Normally, there would not be text in between the cards*/
+    display: inline;
+}
+
+.img-circle {
+    border-radius: 50%;
+    /*border-radius: 50px;*/
+    /*width: 250px;
+    height: 250px;*/
+    width: 300px;
+    height: 300px;
+    /*Margin and top have no effect, use this to alter the image position*/
+    /*object-position: 0.5px -60px;*/
+    /*Center crop, shrunk, maintains ratio*/
+    object-fit: cover;
+    /*default*/
+    /*object-fit: fill;*/
+    /*Maintains Aspect ratio, fits all content inside*/
+    /*object-fit: contain;*/
+    display: block;
+    /*text-align: center;*/
+    margin: auto;
+}
+
+.profile-pic {
+    border: 4px solid white;
+}
+
+.card-wrapper {
+    border: 1px solid pink;
+    width: 500px;
+    float: left;
+    /*fixed height settings*/
+    /*height: 400px;*/
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px 3px #989898;
+    /*margin: 0 auto;*/
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.card-wrapper > .card {
+    background-color: brown;
+    padding: 20px 0;
+}
+
+.card-wrapper > .card  img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background-color: lightcoral;
+}
+
+.card-text-wrapper {
+    background-color: lightcoral;
+    text-align: center;
+    height: auto;
+}
+
+.card-text-wrapper h2 {
+    margin: 0px;
+    padding: 10px 0 6px 0;
+    font-family: 'Arvo', Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+.card-text-wrapper p {
+    margin: 0px;
+    padding: 0 0 6px 0;
+    font-family: 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media (max-width: 600px) {
+    .card-wrapper {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/** References 
+ * https://stackoverflow.com/questions/493296/css-display-an-image-resized-and-cropped
+ * IE9+ Fix for Object-fit : https://medium.com/@primozcigler/neat-trick-for-css-object-fit-fallback-on-edge-and-other-browsers-afbc53bbb2c3
+ * Use float to add mulitple cards on the same row.
+ */
